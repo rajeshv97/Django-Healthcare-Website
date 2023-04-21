@@ -1,0 +1,58 @@
+{% extends 'dashboard/PatientBase.html' %}
+
+{%block content%}
+
+<div class = "container">
+<div class="jumbotron">
+		<div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+      	{% for x in query %}
+        <h5 class="card-title">${{x.BILL_DUE}}</h5>
+        
+        <p class="card-text">BILL DUE</p>
+        {% endfor %}
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+      	 {% for x in query %}
+        <h5 class="card-title">${{x.BILL_PAID}}</h5>
+       
+        <p class="card-text">BILL PAID</p>
+        {% endfor %}
+        
+      </div>
+    </div>
+  </div>
+
+
+<div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+      	{% for x in query %}
+        <h5 class="card-title">${{x.TOTAL_BILL}}</h5>
+        
+        <p class="card-text">TOTAL BILL</p>
+        {% endfor %}
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+	</div>
+</div>
+
+{% endblock content %}
+</div>
+
+
+	
+	
+
+

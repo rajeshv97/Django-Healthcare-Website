@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Patient Medical Record</title>
+</head>
+<body>
+
+	<form method = "POST" action = "medrecordsuccess">
+        {%csrf_token%}
+       
+        <input type="text" id="knowndisease" name="knowndisease">
+        <input type="text" id="diagnosis" name="diagnosis">
+        <input type="text" id="patientid" name="patientid">
+
+        <input type="submit" name="" value = "submit">
+	</form>
+	
+  
+			
+</body>
+</html>

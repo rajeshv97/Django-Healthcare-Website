@@ -1,0 +1,91 @@
+{% load crispy_forms_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wildcat Healthcare - Patient Login</title>
+
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static "assets/vendor/fontawesome-free/css/all.min.css" %}" rel="stylesheet">
+  <link href="{% static "assets/vendor/animate.css/animate.min.css"%}" rel="stylesheet">
+  <link href="{% static "assets/vendor/bootstrap/css/bootstrap.min.css"%}" rel="stylesheet">
+  <link href="{% static "assets/vendor/bootstrap-icons/bootstrap-icons.css"%}" rel="stylesheet">
+  <link href="{% static "assets/vendor/boxicons/css/boxicons.min.css"%}" rel="stylesheet">
+  <link href="{% static "assets/vendor/glightbox/css/glightbox.min.css"%}" rel="stylesheet">
+  <link href="{% static "assets/vendor/remixicon/remixicon.css"%}" rel="stylesheet">
+  <link href="{% static "assets/vendor/swiper/swiper-bundle.min.css"%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  {% comment %} <link href="assets/css/style.css" rel="stylesheet"> {% endcomment %}
+  <link rel="stylesheet" type="text/css" href="{% static "assets/css/style.css" %}"/>
+
+
+</head>
+<body>
+
+	<!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:chaitanyarajeev@arizona.edu">eller@arizona.edu</a>
+        <i class="bi bi-phone"></i> +1 5200000000
+      </div>
+      
+    </div>
+  </div>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">Wildcat Healthcare - Patient Login</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    </div>
+	<br>
+<div class = "container">
+
+	<div class="card">
+  <div class="card-header">
+    PATIENT LOGIN
+  </div>
+  <div class="card-body">
+
+  	<div class = "container">
+
+		
+		<p>Successfully Logged Out!</p>
+		<a href="{% url 'login' %}"><p>Click here to go back to the LogIn Screen</p></a>
+
+
+
+	</div>
+
+    
+  </div>
+</div>
+	
+	
+</div>
+	
+
+
+
+
+
+</body>
+</html>

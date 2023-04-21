@@ -1,0 +1,36 @@
+{% extends 'dashboard/PatientBase.html'%}
+
+{%block content%}
+<div class = "container">
+
+<div class="card">
+  <div class="card-header">
+    Book an Appointment
+  </div>
+  <div class="card-body">
+    <form action = "availabledoctors">
+		<select name = "departments">
+		<option disabled =true selected>--Select Department Name</option> 
+		
+			{% for x in query %}
+			<option><h3>{{x.DEPTNAME}}</h3></option>
+			{% endfor %}
+	
+		
+	</select>
+	
+	<input type="submit" name="" value = "Search">
+
+
+	</form>
+  </div>
+</div>
+
+
+</div>
+
+{%endblock content%}
+
+	
+			
+

@@ -1,0 +1,46 @@
+{% extends 'dashboard/PatientBase.html'%}
+
+{% block content %}
+
+<div class = "container">
+
+<div class="card">
+  <div class="card-header">
+    Select A Doctor
+  </div>
+  <div class="card-body">
+<form action = "doctoravailability">
+{% for x in query %}
+  	<div class="card">
+  <div class="card-body">
+    <input type="hidden" name="employeeid" value = {{x.EMPLOYEEID}}>
+    <h4>{{x.FIRSTNAME}}</h4>
+    <input type="submit" name="" value = "Book an appointment">
+  </div>
+</div>
+{%endfor%}
+</form>
+    
+  </div>
+</div>
+
+
+
+	
+	
+		
+			
+			
+			
+			
+				
+			
+			
+
+			
+
+
+		
+
+{% endblock content %}
+		

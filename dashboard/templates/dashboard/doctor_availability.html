@@ -1,0 +1,56 @@
+{% extends 'dashboard/PatientBase.html'%}
+
+{% block content %}
+
+<div class = "container">
+
+<div class="card">
+  <div class="card-header">
+    Pick A Time
+  </div>
+  <div class="card-body">
+
+  	<form action = "appointmentbookedsuccessfully">
+		<select name = "dates">
+		<option disabled =true selected>--Select a date</option> 
+		
+			{% for x in dates %}
+			<option><h3>{{x}}</h3></option>
+			{% endfor %}
+	
+		
+		</select>
+		<select name = "time">
+		<option disabled =true selected>--Select a time</option> 
+		
+			<option><h3>10</h3></option>
+			<option><h3>11</h3></option>
+			<option><h3>12</h3></option>
+			<option><h3>13</h3></option>
+			<option><h3>14</h3></option>
+			<option><h3>15</h3></option>
+		
+		</select>
+		<select name = "onlineoffline">
+		<option disabled =true selected>--Select mode</option> 
+		
+			<option><h3>Online</h3></option>
+			<option><h3>Offline</h3></option>
+			
+		
+		</select>
+
+		<br>
+		
+		<input type="hidden" name="employeeid" value = {{result2}}>
+		<br>
+	<input type="submit" name="" value = "Select">
+
+</form>
+
+
+  </div>
+</div>
+{%endblock%}
+
+	
